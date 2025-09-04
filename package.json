@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "practicas para la materia de backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build-spec": "node -e \"const fs=require('fs');const {swaggerSpec}=require('./src/docs/swagger');fs.writeFileSync('./swagger.json', JSON.stringify(swaggerSpec, null, 2))\"",
+    "validate:swagger-cli": "npx swagger-cli validate swagger.json || npx swagger-cli validate openapi.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cristofer66X6/Praticas_Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Cristofer66X6/Praticas_Backend/issues"
+  },
+  "homepage": "https://github.com/Cristofer66X6/Praticas_Backend#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
