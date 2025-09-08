@@ -12,3 +12,5 @@ Swagger UI mostrará el botón Authorize para probar con Bearer <token>.
 npm run dev → levanta la API en http://localhost:3000 y docs en http://localhost:3000/docs
 npm run build-spec → genera swagger.json (para el entregable del repo).
 npm run validate:swagger-cli → valida el spec con swagger-cli (opcional).
+
+en Swagger UI tenemos que poner un token de autorizacion aun que sea falso para poder crear usuarios
