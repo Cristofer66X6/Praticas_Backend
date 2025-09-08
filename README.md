@@ -16,3 +16,5 @@ comando para ejecutar los test
 "npm test"
 Verificar cobertura
 "npm run test:coverage"
+
+en coverage/icon-report/index.html podemos ver el coverge que tenemos nosotros 
